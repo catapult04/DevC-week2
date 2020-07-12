@@ -1,21 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, Image, FlatList, SafeAreaView } from "react-native";
+import { Feather } from "@expo/vector-icons";
+
+import { HeadStyles as styles } from "./Styles";
+import Post from './Post';
+import {posts} from './DataForPosts'
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <View>
+            <SafeAreaView name='head' style={styles.headContainer}>
+                <View name='emptyView' style={styles.emptyView} />
+                <Image
+                    source={require("./assets/instagram.png")}
+                    style={styles.instagram}
+                    resizeMode="contain"
+                />
+                <Feather name="inbox" size={25} color="black" style={styles.inboxIcon} />
+            </SafeAreaView>
+            <FlatList name='body'
+                data={posts}
+                keyExtractor={(item, index) => item.id + index + "index"}
+                renderItem={({item}) => <Post item={item} />}
+            />
+        </View>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
