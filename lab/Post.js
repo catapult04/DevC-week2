@@ -2,10 +2,6 @@ import React from "react";
 import { Text, View, Image, Alert } from "react-native";
 import { Feather, AntDesign } from "@expo/vector-icons";
 import { PostStyles as styles } from "./Styles";
-import { Dimensions } from "react-native";
-
-const SCREEN_WIDTH = Dimensions.get("window").width;
-const SCREEN_HEIGHT = Dimensions.get("window").height;
 
 export default function Post({ item }) {
     return (
