@@ -11,19 +11,19 @@ const SEND_MESSAGE_COLOR = 'rgb(120,213,250)';
 const imgData = [
   { 
     id: 1, 
-    imageURL: "",
+    imageURL: "https://hinhdep.com.vn/wp-content/uploads/2013/06/anh-dep-hoa-bo-cong-anh001.jpg",
   },
   { 
     id: 2, 
-    imageURL: "https://cf.shopee.vn/file/31afe487127853e9aaaaff72828619b4",
+    imageURL: "https://hinhdep.com.vn/wp-content/uploads/2013/06/anh-dep-hoa-bo-cong-anh001.jpg",
   },
   { 
     id: 3, 
-    imageURL: "https://2sao.vietnamnetjsc.vn/images/2018/09/13/10/16/anh-the-02.jpg",
+    imageURL: "https://hinhanhdephd.com/wp-content/uploads/2015/12/hinh-anh-dep-girl-xinh-hinh-nen-dep-gai-xinh.jpg",
   },
   { 
     id: 4, 
-    imageURL: "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/sm86swd3xblaftc7_1589441088.jpeg?tr=w-812,h-464",
+    imageURL: "https://tamnhinrong.org/tnr-9-hinh-anh-dep-ve-bien.jpg",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Account({inforAccount}) {
       <View style={styles.account}>
         <Image
           style={styles.avatar}
-          source={{ uri: "https://znews-photo.zadn.vn/w660/Uploaded/qhj_yvobvhfwbv/2018_07_18/Nguyen_Huy_Binh1.jpg" }}
+          source={{ uri: "https://photographer.vn/wp-content/uploads/2016/10/goi-y-nhung-dia-diem-chup-anh-dep-vao-thang-10.jpg" }}
           resizeMode="contain"
         >
         </Image>
